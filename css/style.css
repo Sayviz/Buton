@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .container{
+        max-width: 1920px;
+        margin: 0 auto;
+        border: 2px solid rgb(255, 0, 0);
+    }
+    body{
+        font-family: 'Cinzel', serif;
+background-color: #16161A;
+    }
+header{
+    background-color: #16161A;
+    min-height: 100vh;
+}
+.header-top{
+display: flex;
+justify-content: space-between;
+padding-top: 46px;
+min-height: 136px;
+align-items: center;
+}
+nav ul{
+    display: flex;
+    min-width: 610px;
+    justify-content: space-between;
+} 
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    padding: 18px 32px;
+    color: #FFFFFF;
+    text-decoration: none;
+} nav ul li a:hover{
+    background: #5092D2;
+    color: #16161A;
+}
+.header-info{
+    background-image: url(../img/herois-header.png);
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+.header-info h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 90%;
+/* or 58px */
+
+
+color: #FFFFFF;
+ max-width: 878px;
+ padding-top: 148px;
+}
+.header-info p{
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+/* or 29px */
+
+
+color: #FFFFFF;
+max-width: 618px;
+padding-top: 16px;
+}
+.header-info button{
+    transition: all 1s;
+    padding: 18px 32px;
+    background: #5092D2;
+border-radius: 5px;
+margin-top: 24px;
+margin-right: 20px;
+}
+.header-info button:hover{
+    background: none;
+    color: #FFFFFF;
+    border: 1px solid red;
+}
+.about-element{
+    width: 368px;
+    height: 420px;
+    background: #1E1E1E;
+    position: relative;
+    margin-top: 164px;
+}
+.about-element img{
+    position: absolute;
+    top: -100px;
+}
+.about-element:nth-child(1) img{
+    top: -105px;
+} 
+.about-element:nth-child(2) img{
+    top: -90px;
+} 
+.about-element:nth-child(4) img{
+    top: -75px;
+}
+.about h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #FFFFFF;
+}
+.about{
+    background-color: #16161A;
+}
+.about-element h3{
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+.hero-info{
+    background-image: url(../img/principal.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-color: #16161A;
+}
+.hero h2{   
+    margin-left: auto;
+    max-width: 404px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #16161A;
+    padding-top: 210px;
+}
+.hero p{
+    margin-left: auto;
+    max-width: 404px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+.wepon-continer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 16px;
+    background-color: #16161A;
+    padding-top: 26px;
+    padding-bottom: 96px;
+}
+.wepon h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 65px;
+    color: #FFFFFF;
+    background-color: #16161A;
+}
+.wepon-element{
+    min-height: 520px;
+    background-color: #27272E;
+    background-image: url(../img/machado.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.wepon-element:nth-child(2){
+    background-image: url(../img/flecha.png);
+}
+.wepon h3{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    /* identical to box height */
+    color: #FFFFFF;
+    padding-top: 200px;
+    margin-left: 64px;
+    margin-right: 200px;
+}
+.wepon p{
+    width: 405px;
+    height: 58px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+    padding-top: 16px;
+    margin-left: 64px;
+}
+.wepon-element button{
+    padding: 18px 32px;
+    background: #5092D2;
+    border-radius: 5px;
+    margin-top: 24px;
+    margin-right: 20px;
+    transition: all 1s;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #16161A;
+    margin-left: 40px;
+}
+.wepon-element button:hover{
+    background: none;
+    color: #FFFFFF;
+    border: 1px solid rgb(128,128,128);
+}
+.about-photo{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:760px) {
+    nav ul li a {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    nav ul {
+        min-width: 464px;
+    }
+}
+@media screen and (max-width:650px) {
+    nav ul li a {
+        font-size: 8px;
+        padding: 6px 12px;
+    }
+    nav ul {
+        min-width: 220px;
+    }
+}
+@media screen and (max-width:480px) {
+    nav ul li a{
+        font-size: 7px;
+        padding: 4px 4px;
+    }
+        
+ }
+@media screen and (max-width:425px) {
+    .header-top, nav ul {
+        flex-direction: column;
+    } 
+        nav ul li a{
+            font-size: 26px;
+        padding: 3px 14px;
+        }
+    }
+    @media screen and (max-width:240px){
+        .header-top, nav ul{
+            flex-direction: column;
+        }
+        nav ul li a {
+            font-size: 18px;
+        padding: 4px 5px;
+    } 
+    .header-info h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 90%;
+        color: #FFFFFF;
+        max-width: 878px;
+        padding-top: 148px;
+    } 
+}
